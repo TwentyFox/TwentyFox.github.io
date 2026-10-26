@@ -1,2 +1,2 @@
-# TwentyFox.github.io
-A website to display and host my projects.
+# Trenten Roberts
+Game Developer, Software Developer
