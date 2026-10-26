@@ -1,0 +1,23 @@
+$green1 : #DAD7CD;
+$green2 : #A3B18A;
+$green3 : #588157;
+$green4 : #3A5A40;
+$green5 : #344E41;
+
+$brown1 : #b6ad90;
+$brown2 : #a68a64;
+$brown3 : #936639;
+$brown4 : #7f4f24;
+$brown5 : #582f0e;
+
+$font-stack : 'Helvetica Neue', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $green1;
+  color: $brown5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $green5;
+}
