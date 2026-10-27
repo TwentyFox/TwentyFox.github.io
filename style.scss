@@ -1,15 +1,20 @@
 ---
 ---
 
-$primary-color: #e7d8c6;
+// Color palette
+$primary-color: #342d30;
 $secondary-color: #ffbd4a;
 $tertiary-color: #ff5596;
 
+// Typography
 $font-title: 'Damion', cursive;
 $font-main: 'Roboto Slab', serif;
+$font-color-dark: #1f1b1d;
+$font-color-light: #f3f3d9;
 
 body {
   font-family: $font-main;
+  color: $font-color-dark;
   background-color: $primary-color;
   background-image: linear-gradient(
     120deg,
@@ -21,8 +26,27 @@ body {
   );
   background-size: 300% 300%;
   animation: warm-gradient-shift 18s ease-in-out infinite;
-  color: black;
-  justify-content: center;
+}
+
+main,
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main {
+  background-color: $primary-color;
+  border-radius: 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  color: $font-color-dark;
+}
+
+h1 {
+  font-size: 64px;
 }
 
 @keyframes warm-gradient-shift {
@@ -41,26 +65,4 @@ body {
     animation: none;
     background-position: center;
   }
-}
-
-main {
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: $primary-color;
-  border-radius: 16px;
-}
-
-main,
-header {
-  max-width: 800px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-title;
-  color: $tertiary-color;
 }
