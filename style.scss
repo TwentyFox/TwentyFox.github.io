@@ -1,26 +1,66 @@
 ---
 ---
 
-$green1 : #DAD7CD;
-$green2 : #A3B18A;
-$green3 : #588157;
-$green4 : #3A5A40;
-$green5 : #344E41;
+$primary-color: #e7d8c6;
+$secondary-color: #ffbd4a;
+$tertiary-color: #ff5596;
 
-$brown1 : #b6ad90;
-$brown2 : #a68a64;
-$brown3 : #936639;
-$brown4 : #7f4f24;
-$brown5 : #582f0e;
-
-$font-stack : 'Helvetica Neue', sans-serif;
+$font-title: 'Damion', cursive;
+$font-main: 'Roboto Slab', serif;
 
 body {
-  font-family: $font-stack;
-  background-color: $green1;
-  color: $brown5;
+  font-family: $font-main;
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    120deg,
+    #f8c8dc,
+    #ffd3b6,
+    #ffe0b5,
+    #f6c6d8,
+    #ffc9a9
+  );
+  background-size: 300% 300%;
+  animation: warm-gradient-shift 18s ease-in-out infinite;
+  color: black;
+  justify-content: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $green5;
+@keyframes warm-gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+    background-position: center;
+  }
+}
+
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: $primary-color;
+  border-radius: 16px;
+}
+
+main,
+header {
+  max-width: 800px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+  color: $tertiary-color;
 }
